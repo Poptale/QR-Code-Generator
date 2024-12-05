@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#4e54ee, #21259b);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover{
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vh;
+    width: 35%;
+    padding: 5px;
+    border-radius: 15px;
+   /* box-shadow: 0 0 10px #fff;*/
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #494eea;
+    background: linear-gradient(#fff, #c1c0c0);
+    height: 77vh;
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    background-color: #494eea;
+    color: #ffffff;
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+button:after{
+    content: "Generate";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #494eea;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+}
+button:hover:after{
+    bottom: 100%;
+}
+button:before{
+    content: "Generate";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #292db3;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+}
+button:hover:before{
+    top: 0;
+}
+.info{
+    position: relative;
+    height: inherit;
+    width: 412px;
+    margin-top: 5px;
+}
+input{
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #494eea;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 150px;
+    font-size: 20px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+.image-cover{
+    margin-top: 60px;
+    border: 5px solid #494eea;
+    min-height: 300px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+p{
+    color: #343ae7;
+    margin-top: 30px;
+}
+.sorry{
+    font-size: 20px;
+}
